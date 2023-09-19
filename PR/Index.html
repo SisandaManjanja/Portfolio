@@ -11,16 +11,17 @@
         <div id="header">
         <div class="container">
             <nav>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>UI/XI Designer</p>
+                <p>Fullstack developer</p>
                 <h1>Hi,I'm <span>Sisanda</span><br> Manjanja from the Eastern Cape province in South Africa.</h1>
             </div>
             </div>
@@ -42,6 +43,8 @@
                             and I indeed exceeded in that but now as a Graduate free from any preconceived workplace ideologies
                             I am looking to start my journey in the IT workspace and to be developed and molded into one of the highest performing individual of any company that is willing to give an opportunity to start my journey
                         </p>
+                        <a href="Sisanda Manjanja CV.pdf" download class="btn btn2">Download CV</a>
+                        <a href="#" download class="btn btn2">High Me</a>
 
 
                         <div class="tab-titles">
@@ -81,19 +84,22 @@
                     <div>
                         <i class="fa-solid fa-code"></i>
                         <h2>Web Design</h2>
-                        <p>sidueffsyufytsuuir jdihduyyuuiwt kjdwgydws hihugdsh</p>
+                        <p>Web application that will help students apply,enroll and do their school work anytime and anywhere in the world as long as they have internet.</p>
                         <a href="#">Learn more</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-crop-simple"></i>
                         <h2>UI/UX</h2>
-                        <p>sidueffsyufytsuuir jdihduyyuuiwt kjdwgydws hihugdsh</p>
+                        <p> I ensure that digital products are visually appealing,
+                          easy to use, and provide a positive experience for the users.</p>
                         <a href="#">Learn more</a>
                     </div>
                     <div>
                         <i class="fa-brands fa-app-store-ios"></i>
                         <h2>App Design</h2>
-                        <p>sidueffsyufytsuuir jdihduyyuuiwt kjdwgydws hihugdsh</p>
+                        <p> My primary goal is to create a visually appealing, intuitive,
+                             and user-friendly interface that enhances the overall functionality and
+                              experience of the mobile application.</p>
                         <a href="#">Learn more</a>
                     </div>
                 </div>
@@ -147,14 +153,15 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1  class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                            <p><i class="fa-solid fa-paper-plane"></i>sisandaemm@gmail.com</p>
+                        </a>
                         <p><i class="fa-solid fa-phone"></i>0671644851</p>
                         <div class="social-icons">
-                            <a href="https://teams.microsoft.com/l/message/48:notes/1693559352263?context=%7B%22contextType%22%3A%22chat%22%7D"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/sisanda-manjanja-2a7b94253"><i class="fa-brands fa-linkedin"></i></a>
                             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
 
                         </div>
-                        <a href="Sisanda Manjanja CV.pdf" download class="btn btn2">Download CV</a>
+
                     </div>
                     <div class="contact-right">
                         <form>
@@ -189,6 +196,15 @@
                 document.getElementById(tabname).classList.add("active-tab");
             }
         </script>
-    
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0"
+            }
+            function closemenu(){
+                sidemenu.style.right = "200px"
+            }
+        </script>
 </body>
 </html>

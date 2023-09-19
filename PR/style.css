@@ -8,8 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: black;
+    color: burlywood;
 }
 #header{
     width: 100%;
@@ -128,6 +128,55 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+/*------------skills---------------*/
+#skills{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px - 1px rgba(255,255,255,0.7)
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                 inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                 -0.5px -0.5px 0px rgba(255,255,255,1),
+                 0.5px 0.5px 0px rgba(0,0,0,0.15),
+                 0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+#number{
+    font-weight: 600px;
+    color: #555;
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 165;
+    }
 }
 /*----------services-----------*/
 #services{
@@ -319,5 +368,44 @@ form btn2{
 .copyright i{
     color: #ff004f;
 }
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url();
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+        }
+nav  .fas{
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background:#ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+   padding-top: 50px;
+   z-index: 2;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
 
+}
     
